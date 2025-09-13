@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matriz.LowerTriangular", "Matriz.LowerTriangular", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerTriangular.Console", "LowerTriangular.Console\LowerTriangular.Console.csproj", "{E0955489-F707-4145-BCFC-776C234B887C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matriz.SharedClass", "Matriz.SharedClass", "{B7A25E22-3156-4015-92ED-0A6092010E3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExtensions", "ConsoleExtensions\ConsoleExtensions.csproj", "{799A2C37-4020-4868-86A6-46D7B2BA74E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matriz.Hourglass", "Matriz.Hourglass", "{D05B99E0-835C-44EC-98FF-50149F8DBD91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourglass.Console", "Hourglass.Console\Hourglass.Console.csproj", "{E1DE27D7-50C2-49F8-9CE0-7FD263C70F4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0955489-F707-4145-BCFC-776C234B887C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0955489-F707-4145-BCFC-776C234B887C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0955489-F707-4145-BCFC-776C234B887C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0955489-F707-4145-BCFC-776C234B887C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799A2C37-4020-4868-86A6-46D7B2BA74E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799A2C37-4020-4868-86A6-46D7B2BA74E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799A2C37-4020-4868-86A6-46D7B2BA74E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799A2C37-4020-4868-86A6-46D7B2BA74E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DE27D7-50C2-49F8-9CE0-7FD263C70F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DE27D7-50C2-49F8-9CE0-7FD263C70F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DE27D7-50C2-49F8-9CE0-7FD263C70F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DE27D7-50C2-49F8-9CE0-7FD263C70F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E0955489-F707-4145-BCFC-776C234B887C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{799A2C37-4020-4868-86A6-46D7B2BA74E6} = {B7A25E22-3156-4015-92ED-0A6092010E3F}
+		{E1DE27D7-50C2-49F8-9CE0-7FD263C70F4A} = {D05B99E0-835C-44EC-98FF-50149F8DBD91}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8428A37C-3309-4251-9FFA-371BED0ED444}
+	EndGlobalSection
+EndGlobal
