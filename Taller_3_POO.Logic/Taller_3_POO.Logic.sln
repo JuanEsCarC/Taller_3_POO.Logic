@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerTriangular.Console", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matriz.SharedClass", "Matriz.SharedClass", "{B7A25E22-3156-4015-92ED-0A6092010E3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExtensions", "ConsoleExtensions\ConsoleExtensions.csproj", "{799A2C37-4020-4868-86A6-46D7B2BA74E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "ConsoleExtensions\Shared.csproj", "{799A2C37-4020-4868-86A6-46D7B2BA74E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matriz.Hourglass", "Matriz.Hourglass", "{D05B99E0-835C-44EC-98FF-50149F8DBD91}"
 EndProject
