@@ -1,47 +1,58 @@
 ﻿using Shared;
 
-try
+var response = string.Empty;
+
+do
 {
-
-    var n = ConsoleExtensions.getInt("Enter the size of the matrix (positive integer): ");
-
-    int?[,] celda = new int?[n,n];
-
-            
-    for (int i = 0; i < n; i++)
+    try
     {
-        for (int j = 0; j < n; j++)
+
+        var n = ConsoleExtensions.getInt("Enter the size of the matrix (positive integer): ");
+
+        int?[,] celda = new int?[n, n];
+
+
+        for (int i = 0; i < n; i++)
         {
-            celda[i, j] = i + j;
-        }
-    }
-
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            Console.Write($"{celda[i, j],-5}");   
-        }
-        Console.WriteLine();
-    }
-
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            if (j > i)
+            for (int j = 0; j < n; j++)
             {
-                celda[i, j] = null;
+                celda[i, j] = i + j;
             }
-            Console.Write($"{celda [i, j],-5}");
         }
-        Console.WriteLine();
+
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                Console.Write($"{celda[i, j],-5}");
+            }
+            Console.WriteLine();
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (j > i)
+                {
+                    celda[i, j] = null;
+                }
+                Console.Write($"{celda[i, j],-5}");
+            }
+            Console.WriteLine();
+        }
+
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
 
+    Console.WriteLine();
+    Console.Write("Want to try again, [Y]es or [N]ot? ");
+    response = Console.ReadLine();
+
 }
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+while (response!.ToLower() == "y");
+
+Console.WriteLine("Game Over! Thanks for playing");

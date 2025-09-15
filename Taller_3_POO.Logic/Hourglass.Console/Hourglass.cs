@@ -15,6 +15,7 @@ do
         for (int i = 0; i < n; i++)
         {
             int start = 2 * i;
+            
             for (int j = 0; j < n; j++)
             {
                 celda[i, j] = start + j;
@@ -60,4 +61,4 @@ do
 }
 while (response!.ToLower() == "y");
 
-Console.WriteLine("Game Over! Thanks for trying");
+Console.WriteLine("Game Over! Thanks for playing");
