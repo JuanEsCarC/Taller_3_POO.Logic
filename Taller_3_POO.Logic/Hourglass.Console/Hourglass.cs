@@ -1,48 +1,63 @@
 ﻿using Shared;
 
-try
+var response = string.Empty;
+
+do
 {
-
-    var n = ConsoleExtensions.getInt("Enter the size of the matrix (positive integer): ");
-
-    int?[,] celda = new int?[n, n];
-
-
-    for (int i = 0; i < n; i++)
+    try
     {
-        int start = 2 * i;
-        for (int j = 0; j < n; j++)
-        {
-            celda[i, j] = start + j;  
-        }
-    }
 
-    Console.WriteLine("FULL MATRIX");
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            Console.Write($"{celda[i, j],-5}");
-        }
-        Console.WriteLine();
-    }
+        var n = ConsoleExtensions.getOddInt("Enter the size of the matrix (positive odd integer): ");
 
-    Console.WriteLine("HOURGLASS");
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
+        int?[,] celda = new int?[n, n];
+
+
+        for (int i = 0; i < n; i++)
         {
-            if ((j < i && i + j <= 9) || (i < j && i + j >= 11))
+            int start = 2 * i;
+            for (int j = 0; j < n; j++)
             {
-                celda[i, j] = null;
+                celda[i, j] = start + j;
             }
-            Console.Write($"{celda[i, j],-5}");
         }
-        Console.WriteLine();
+
+        Console.WriteLine("FULL MATRIX");
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                Console.Write($"{celda[i, j],-5}");
+            }
+            Console.WriteLine();
+        }
+
+        Console.WriteLine("HOURGLASS");
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                int midPoint = (n - 1) / 2;
+
+                if ((j < i && i + j <= (midPoint * 2 - 1)) || (i < j && i + j >= (midPoint * 2 + 1)))
+                {
+                    celda[i, j] = null;
+                }
+                Console.Write($"{celda[i, j],-5}");
+            }
+            Console.WriteLine();
+        }
+
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
 
+    Console.WriteLine();
+    Console.Write("Want to try again, [Y]es or [N]ot? ");
+    response = Console.ReadLine();
+
 }
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+while (response!.ToLower() == "y");
+
+Console.WriteLine("Game Over! Thanks for trying");
